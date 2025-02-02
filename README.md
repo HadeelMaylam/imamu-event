@@ -162,7 +162,7 @@ Here are some useful resources that were referenced during the development of th
 ## ⚙️ Installation Guide
 1. **Clone the Repository**
 ```sh
-git clone [https://github.com/sfayez-byte/Imam-events-website.git](https://github.com/HadeelMaylam/imamu-event.git)
+git clone https://github.com/HadeelMaylam/imamu-event.git
 cd Imam-events-website
 ```
 
