@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج التسجيل</title>
+    <link rel="stylesheet" type="text/CSS" href="stylesCo.css">
+    <script defer src="script.js"></script> <!-- استدعاء ملف JavaScript -->
+</head>
+<body>
+    <div class="form-container">
+        <h2>تسجيل دورة أو هاكاثون</h2>
+        
+        <div class="message" id="form-message"></div>
+        
+        <form id="registrationForm" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">اسم الدورة أو الهاكاثون:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="type">نوع التسجيل:</label>
+                <select id="type" name="type" required>
+                    <option value="">-- اختر النوع --</option>
+                    <option value="هاكاثون">هاكاثون</option>
+                    <option value="دورة">دورة</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date_start">تاريخ البدء:</label>
+                <input type="date" id="date_start" name="date_start" required>
+            </div>
+            <div class="form-group">
+                <label for="date_end">تاريخ الانتهاء (للهاكاثون فقط):</label>
+                <input type="date" id="date_end" name="date_end">
+            </div>
+            <div class="form-group">
+                <label for="description">نبذة عن الدورة أو الهاكاثون:</label>
+                <textarea id="description" name="description" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="organization">الجهة المنظمة:</label>
+                <input type="text" id="organization" name="organization" required>
+            </div>
+            <!-- <div class="form-group">
+                <label for="image">صورة الدورة أو الهاكاثون:</label>
+                <input type="file" id="image" name="image" accept="image/*" required> -->
+            </div>
+            <div class="form-group">
+                <button type="submit">حفظ التسجيل</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

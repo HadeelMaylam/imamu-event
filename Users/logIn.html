@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <link rel="stylesheet" type="text/css" href="css/Admin.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>تسجيل الدخول</h1>
+        <p>لاتملك حساب مسجل؟ <a href="signUp.html">إنشاء حساب</a></p>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" placeholder="أدخل بريدك الإلكتروني" required>
+            </div>
+            <div class="form-group">
+                <label for="password">كلمة المرور:</label>
+                <input type="password" id="password" placeholder="أدخل كلمة المرور" required>
+            </div>
+            <button type="submit">تسجيل الدخول</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function (event) {
+            event.preventDefault(); 
+
+            console.log("تم الضغط على زر تسجيل الدخول"); 
+
+            location.assign("http://127.0.0.1:5500/api/Pages/CollegePortal.html");
+        });
+    </script>
+</body>
+</html>
