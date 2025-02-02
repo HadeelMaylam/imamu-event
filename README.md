@@ -163,7 +163,7 @@ Here are some useful resources that were referenced during the development of th
 1. **Clone the Repository**
 ```sh
 git clone https://github.com/HadeelMaylam/imamu-event.git
-cd Imam-events-website
+cd Imam-events
 ```
 
 2. **Install Dependencies**
